@@ -1,0 +1,44 @@
+
+* {
+  margin-left: 0.5rem;
+  margin-bottom: 50px;
+  font-family: 'consolas', sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f8f8f8;
+}
+
+.backToHome {
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  border-radius: 5px;
+  background: black;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  padding: 10px 10px;
+}
+.backToHome:hover{
+  color: black;
+  background: white;
+}
+#generate {
+  background: #add8e6;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  border: #000;
+  color: #000;
+  cursor: pointer;
+  width: 200px;
+  height: 45px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  font-size: 16px;
+  font-weight: bold;
+}

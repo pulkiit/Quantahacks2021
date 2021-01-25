@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="username.css">
+  </head>
+
+  <body>
+    <a class="backToHome" href="index.html">Back to Home</a>
+    <div class="container">  
+      <h1>Generate A Random Username</h1>
+      <div id="random-name"></div>
+      <button class="btn btn-primary" id="generate">Generate Username</button>
+    </div>
+    <script>
+      const firstWord = ["Cool","Amazing","Super","Fantastic","Superb","Magnificent","Awesome","Wacky","Crazy","Bizarre"];
+      const lastWord = ["Dog","Elephant","Cat","Tiger","Zebra","Lion","Wildebeast","Bird","Hamster","Squirrel","Giraffe","Fish","Shark","Mouse"];
+      const num = Math.floor(Math.random() * 100);
+      const getRandomNumber = (max) => Math.floor(Math.random() * max);
+
+      const getRandomName = () =>
+        `${firstWord[getRandomNumber(firstWord.length)]}${lastWord[getRandomNumber(lastWord.length)]}${num}`;
+
+      const setRandomName = () => {
+        document.getElementById('random-name').innerText = getRandomName();
+      }
+
+      document.getElementById('generate').addEventListener('click', setRandomName);
+
+      setRandomName();
+    </script>
+  </body>
+</html>
